@@ -67,7 +67,7 @@ const navigateTo = (hash) => {
         <div class="left-separation">
             <router-link to="/contact">
                 <div class="button-style-3">
-                    <h3>Contact Me</h3>
+                    <h3>Contact</h3>
                 </div>        
             </router-link>
             <div class="separator"></div>
