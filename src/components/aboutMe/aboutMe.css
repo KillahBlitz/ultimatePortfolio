@@ -55,7 +55,6 @@
     color: var(--primary-color);
     white-space: nowrap;
     overflow: hidden;
-    text-shadow: 0 0 5px var(--shadow-color);
     border-right: 3px solid var(--primary-color);
     display: inline-block;
     max-width: fit-content;
