@@ -1,0 +1,31 @@
+<script setup>
+import AboutMe from './components/aboutMe/aboutMe.vue';
+import Experience from './components/experience/experience.vue';
+import Skills from './components/skills/skills.vue';
+import background from './components/utils/background.vue';
+import Header from './components/utils/header.vue';
+</script>
+
+<template>
+    <div class="head">
+        <Header />
+    </div>
+    <background />
+    <div id="about">
+        <AboutMe />
+    </div>
+    <div id="experience">
+        <Experience />
+    </div>
+    <div id="skills">
+        <Skills />
+    </div>
+</template>
+
+<style scoped>
+.head {
+    padding-top: 15px;
+    position: relative;
+    z-index: 1;
+}
+</style>

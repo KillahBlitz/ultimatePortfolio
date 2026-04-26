@@ -1,0 +1,42 @@
+:root {
+    --primary-color: #cc000e;
+    --background-color: #e2e2e2;
+    --shadow-color: #b3020e;
+    --font-color: #111827;
+    --gradient-color: #ff0099;
+}
+
+:root.dark-mode,
+.dark-mode {
+    --primary-color: #09ff00;
+    --background-color: #0d0d0e;
+    --shadow-color: #17b612;
+    --font-color: #e2e2e2;
+    --gradient-color: #00d4ff;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Jura', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    color: var(--font-color);
+    scroll-behavior: smooth;
+}
+
+#app {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
