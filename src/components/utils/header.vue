@@ -65,11 +65,11 @@ const navigateTo = (hash) => {
             </a>
         </div>
         <div class="left-separation">
-            <router-link to="/contact">
+            <a href="#contact">
                 <div class="button-style-3">
                     <h3>Contact</h3>
                 </div>        
-            </router-link>
+            </a>
             <div class="separator"></div>
             <SwitchToggle />
             <div class="hamburger-menu" @click="toggleMenu">
