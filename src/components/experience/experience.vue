@@ -74,7 +74,7 @@ const toggleExperience = (index) => {
     <div class="content">
         <content class="lg-box">
             <section class="title">
-                <h2>Professional Experience</h2>
+                <h2>Experiencia Profesional</h2>
             </section>
             <section class="experience-box">
                 <div class="timeline">

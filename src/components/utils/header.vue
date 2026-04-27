@@ -48,19 +48,19 @@ const navigateTo = (hash) => {
                     <h3>Certificates</h3>
                 </div>
             </a>
-            <a href="https://github.com/KillahBlitz" target="_blank">
+            <a href="https://github.com/KapauCastle" target="_blank">
                 <div class="button-style-2">
                     <img src="/icons/logo_gh.png"/>
                 </div>
             </a>
-            <a href="https://www.linkedin.com/in/monroy-jacobo" target="_blank">
+            <a href="https://www.linkedin.com/in/karen-paulina-blanco-castillo-65882419b" target="_blank">
                 <div class="button-style-2">
                         <img src="/icons/logo_ln.png"/>
                 </div>
             </a>
-            <a href="https://www.instagram.com/kinasis_dev/" target="_blank">
+            <a href="/CV/CV_Blanco_C._Karen_P..pdf" download class="icon-link">
                 <div class="button-style-2">
-                        <img src="/icons/logo_ig.png"/>
+                        <img src="/icons/logo_pf.png"/>
                 </div>
             </a>
         </div>
