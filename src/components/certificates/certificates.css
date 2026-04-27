@@ -238,6 +238,7 @@ img{
 .cta-section{
     width: 100%;
     padding: 40px 20px;
+    margin-bottom: 50px;
     background: linear-gradient(135deg, rgba(var(--primary-rgb), 0.1), rgba(var(--secondary-rgb), 0.1));
     border-radius: 15px;
     text-align: center;

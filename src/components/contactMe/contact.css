@@ -9,10 +9,6 @@
     --font-bg: rgb(27, 27, 27);
 }
 
-.contact-root {
-    position: relative;
-}
-
 .banner-contact {
     position: relative;
     width: min(1200px, 90%);
@@ -31,7 +27,6 @@
     0 2px 14px var(--primary-color),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
     text-align: center;
-    overflow: hidden;
 }
 
 .banner-contact::before {
@@ -56,18 +51,14 @@
     0 0 10px var(--primary-color),
     0 0 20px var(--shadow-color);
     margin-bottom: 1rem;
-    position: relative;
-    z-index: 2;
 }
 
 .banner-contact h2 {
     font-size: clamp(1rem, 2.5vw, 1.3rem);
     font-weight: 400;
-    color: var(--secondary-color);
+    color: var(--background-color);
     margin: 0;
     line-height: 1.5;
-    position: relative;
-    z-index: 2;
 }
 
 .contact-container {

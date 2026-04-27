@@ -28,6 +28,7 @@ import Header from './components/utils/header.vue';
     <div id="contact">
         <Contact />
     </div>
+    <div id="null"></div>
 </template>
 
 <style scoped>
@@ -35,5 +36,13 @@ import Header from './components/utils/header.vue';
     padding-top: 15px;
     position: relative;
     z-index: 1;
+}
+
+#contact {
+    margin-bottom: 100px;
+}
+
+#null {
+    height: 50px;
 }
 </style>
