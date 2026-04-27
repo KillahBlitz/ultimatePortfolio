@@ -79,10 +79,10 @@
     object-fit: contain;
     transition: transform 0.3s ease, filter 0.3s ease;
     margin: 10px;
+    box-shadow: none;
 }
 .tech-icon:hover {
-    transform: scale(1.1);
-    filter: brightness(1.2);
+    transform: scale(1.4);
 }
 .goals-container {
     text-align: center;
