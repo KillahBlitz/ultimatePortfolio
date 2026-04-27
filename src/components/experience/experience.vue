@@ -45,7 +45,7 @@ const experienceItems = [
         image: '/professional_info/liberty.jpg',
         title: 'Liberty Fianzas',
         position: 'Becaria de Datos y QA',
-        dates: 'Nov 2024 - Nov 2025',
+        dates: 'Sep 2024 - Sep 2025',
         responsibilities: [
             'Aseguramiento de Calidad (QA): Ejecución de pruebas integrales en módulos operativos, validando la correcta persistencia de datos y el cumplimiento de la lógica de negocio.',
             'Gestión de Base de Datos: Desarrollo de funciones y procedimientos para la gestión de catálogos, optimizando la lógica de almacenamiento y la integridad de los datos en el sistema financiero.'
