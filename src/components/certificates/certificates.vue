@@ -35,7 +35,6 @@ const closeCertificate = () => {
                 </div>
             </section>
             
-            <!-- Modal para ver certificado en grande -->
             <div v-if="selectedCertificate" class="certificate-modal" @click="closeCertificate">
                 <div class="certificate-modal-content" @click.stop>
                     <button class="certificate-modal-close" @click="closeCertificate">×</button>
