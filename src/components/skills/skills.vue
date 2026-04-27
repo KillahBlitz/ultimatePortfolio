@@ -13,7 +13,7 @@ const techs = {
     "csharp": "https://img.icons8.com/color/96/c-sharp-logo-2.png",
     "cpp": "https://img.icons8.com/color/96/c-plus-plus-logo.png",
     "python": "https://img.icons8.com/color/96/python--v1.png",
-    "nginx": "https://img.icons8.com/external-tal-revivo-green-tal-revivo/96/external-mongodb-a-cross-platform-document-oriented-database-program-logo-green-tal-revivo.png",
+    "nginx": "https://img.icons8.com/color/96/nginx.png",
     "mongo": "https://img.icons8.com/color/96/mongodb.png",
     "php": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-hypertext-preprocessor-a-widely-used-open-source-general-purpose-scripting-language-logo-color-tal-revivo.png",
     "java": "https://img.icons8.com/color/96/java-coffee-cup-logo--v1.png",
@@ -44,7 +44,8 @@ const techs = {
     "vscode": "https://img.icons8.com/color/96/visual-studio-code-2019.png",
     "vs": "https://img.icons8.com/color/96/visual-studio--v1.png",
     "postman": "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/96/external-postman-is-the-only-complete-api-development-environment-logo-shadow-tal-revivo.png",
-    "bash": "https://img.icons8.com/color/96/bash.png"
+    "bash": "https://img.icons8.com/color/96/bash.png",
+    "fedora": "https://img.icons8.com/fluency/96/fedora.png"
 }
 
 </script>
@@ -100,6 +101,8 @@ const techs = {
                         <img :src="techs['docker']" alt="Docker" class="tech-icon" />
                         <img :src="techs['kubernetes']" alt="Kubernetes" class="tech-icon" />
                         <img :src="techs['bash']" alt="bash" class="tech-icon" />
+                        <img :src="techs['nginx']" alt="nginx" class="tech-icon" />
+                        <img :src="techs['fedora']" alt="fedora" class="tech-icon" />
                     </div>
                 </div>
                 <div class="techs-card">
