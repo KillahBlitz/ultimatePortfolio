@@ -12,7 +12,7 @@ import './aboutMe.css';
             </section>
             <section class="presentation-content">
                 <h2>About Me...</h2>
-                <h1>Jacobo Monroy</h1>
+                <h1>Paulina Blanco</h1>
                 <h2>Computer Engineering and Jr FullStack Developer</h2>
             </section>
             <section class="description-container">
