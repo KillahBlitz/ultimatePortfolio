@@ -94,9 +94,9 @@
     color: var(--primary-color);
 }
 .goals-description {
-    font-size: 1.5rem;
+    font-size: 20px;
     color: var(--text-color);
-    max-width: 800px;
+    max-width: 65%;
     margin: 0 auto;
     text-align: justify;
     margin-bottom: 10px;
@@ -106,7 +106,7 @@
     backdrop-filter: blur(2px);
     border-radius: 8px;
     padding: 1.5rem;
-    width: 1200px;
+    width: 75%;
     box-shadow: 0 2px 4px var(--shadow-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     align-items: center;
@@ -115,6 +115,15 @@
 .techs-card-future:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.roadmap {
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    margin: 10px;
+    box-shadow: none;
 }
 
 /* Responsive Design */

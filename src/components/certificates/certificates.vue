@@ -18,44 +18,9 @@ const closeCertificate = () => {
 <template>
     <div class="content">
         <content class="certificates">
-            <h2>Licenses & Certifications</h2>
-            <section class="licenses">
-                <div class="licenses-box">
-                    <h3>Licenses</h3>
-                    <ul>
-                        <li>
-                            <a href="https://freecodecamp.org/certification/JacoboEmilianoMonroyCortines-0641/foundational-c-sharp-with-microsoft" target="_blank">
-                                <img src="https://media.licdn.com/dms/image/v2/C4E0BAQGLKj3JHcof0w/company-logo_100_100/company-logo_100_100/0/1630639684997/free_code_camp_logo?e=1778716800&v=beta&t=PLSfV5h3VinjhL8THH2y3Lg7uSni0caOTlrn2H7U_ps" alt="FreeCodeCamp" />
-                                <div class="text">
-                                    <h5>FreeCodeCamp</h5>
-                                    <h6>Foundational C sharp with Microsoft</h6> 
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.skills.google/public_profiles/21956ab4-f459-412c-8881-552a270ba8fd/badges/23671191" target="_blank">
-                                <img src="https://media.licdn.com/dms/image/v2/D4E0BAQGv3cqOuUMY7g/company-logo_100_100/B4EZmhegXHGcAU-/0/1759350753990/google_logo?e=1778716800&v=beta&t=oyauLAhMKDwroENjxT3iSuFHhYNWyLar32I5PYYRS2g" alt="Google Skills" />
-                                <div class="text">
-                                    <h5>Google Skills</h5>
-                                    <h6>Basic Fundamentals of DevOps in GCP</h6> 
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/learning/certificates/384a2f3391bbb1c3d13c810ded4e1b8f5185d41bd0dafd8dd966f08a63c97557" target="_blank">
-                                <img src="https://media.licdn.com/dms/image/v2/D560BAQH32RJQCl3dDQ/company-logo_100_100/B56ZYQ0mrGGoAU-/0/1744038948046/microsoft_logo?e=1778716800&v=beta&t=yhCG_9tIy97plyj-EzhkTzFKeoOdfmz5Uc05X4kLbCs" alt="LinkedIn Learning" />
-                                <div class="text">
-                                    <h5>LinkedIn Learning</h5>
-                                    <h6>Professional Foundations of Software Development</h6> 
-                                </div>                                
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+            <h2>Certificados</h2>
             <section class="certifications">
                 <div class="certifications-box">
-                    <h3>Certificates</h3>
                     <div class="carousel-container">
                         <div class="certificate-box">
                             <img 
@@ -83,10 +48,10 @@ const closeCertificate = () => {
             <section class="viewer">
                   <div class="cta-section">
                         <p class="cta-text">
-                        If you want to see all my certifications and download my CV, you can click the buttons below.
+                        Si quieres ver todos mis certificados y descargar mi CV, puedes hacer clic en los botones de abajo.
                         </p>
                         <div class="cta-buttons">
-                            <a href="https://drive.google.com/drive/folders/17wNozNMjEvSuC0H97HyaA2DuIXbwQHLE?usp=sharing" 
+                            <a href="https://drive.google.com/drive/folders/1uFcN0-vwGlwW00cyJnPZxX8cC2chlM2C?usp=sharing" 
                                 target="_blank" 
                                 rel="noopener noreferrer" 
                                 class="cta-button primary">
@@ -95,7 +60,7 @@ const closeCertificate = () => {
                                 </svg>
                                 View All Certificates
                             </a>
-                            <a href="/CV/CV_JACOBO_MONROY_C.pdf" 
+                            <a href="/CV/CV_Blanco_C._Karen_P..pdf" 
                                 download 
                                 class="cta-button secondary">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">

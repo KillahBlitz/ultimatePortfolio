@@ -6,57 +6,49 @@ const activeEducationIndex = ref(null);
 const activeExperienceIndex = ref(null);
 
 const educationItems = [
-    {
-        image: '/education/esime.jpg',
-        title: 'National Polytechnic Institute',
-        subtitle: 'Higher School of Mechanical and Electrical Engineering: Culhuacán Unit.',
-        date: 'Juan 2022 - Dec 2026',
-        description: 'Computer Engineering student focused on software development and modern technologies.'
-    },
+    
     {
         image: '/education/udemy.png',
         title: 'Udemy',
-        subtitle: 'Online Learning Platform.',
-        date: 'March 2023 - Present',
-        description: 'Focused on web development, modern frameworks, and backend technologies.'
+        subtitle: 'Plataforma de Aprendizaje en Línea',
+        date: 'Nov 2025 - Presente',
+        description: 'Enfoque en ingeniería de datos, optimización de bases de datos relacionales y no relacionales, y arquitecturas modernas de nube.'
     },
     {
-        image: '/education/microsoftlearn.png',
-        title: 'Microsoft Learn',
-        subtitle: 'Online Learning Platform.',
-        date: 'April 2025 - Present',
-        description: 'Learning cloud technologies, Azure services, and modern development practices.'
+        image: '/education/esime.jpg',
+        title: 'Instituto Politécnico Nacional',
+        subtitle: 'Escuela Superior de Ingeniería Mecánica y Eléctrica Unidad Culhuacán',
+        date: 'Ago 2019 - Jul 2026',
+        description: 'Ingeniera en Computación (Próxima a egresar).'
+    },
+    {
+        image: '/education/cet1.jpg',
+        title: 'Instituto Politécnico Nacional',
+        subtitle: 'Centro de Estudios Tecnológicos No. 1 “Walter Cross Buchanan”',
+        date: 'Ago 2016 - Jun 2018',
+        description: 'Técnico en Redes de Cómputo.'
     }
 ];
 
 const experienceItems = [
-    {
-        image: '/professional_info/picaio.jpg',
-        title: 'Picaio.',
-        position: 'Jr Backend Engineer.',
-        dates: 'Aug 2025 - Present',
-        responsibilities: [
-            'I performed maintenance on legacy code regarding data reconciliation, working with microservices in Python with CI/CD, working with standard software workflow and KANBAN.',
-            'I worked with LLM models for data extraction using text inferred from machine learning, using schemas in JSON.'
-        ]
-    },
+  
     {
         image: '/professional_info/consultorio.jpg',
-        title: 'Reynoso Medical Clinic.',
-        position: 'Desktop App developer.',
-        dates: 'Dec 2025 - Jan 2026',
+        title: 'Clínica Médica Reynoso',
+        position: 'Aplicación de Escritorio',
+        dates: 'Dic 2025 - Ene 2026',
         responsibilities: [
-            'I created a Windows desktop application using WPF with XAML and C#. It managed patient data and the consultations they had attended.'
+            'Desarrollo de una aplicación de escritorio para Windows utilizando WPF con XAML y C#, gestionando el almacenamiento de datos de pacientes y el control de sus consultas.'
         ]
     },
     {
-        image: '/professional_info/huvytas.jpg',
-        title: 'Huvytas Ecommerce.',
-        position: 'Fullstack Developer.',
-        dates: 'July 2025 - Aug 2025',
+        image: '/professional_info/liberty.jpg',
+        title: 'Liberty Fianzas',
+        position: 'Becaria de Datos y QA',
+        dates: 'Nov 2024 - Nov 2025',
         responsibilities: [
-            'With a development team, we created a payment page with an initial product, providing visual development, business logic, and data storage.',
-            'Develop a microservices architecture, develop frontend with Vue and backend with Python with deployments on AWS Amplify, AWS Lambda, DynamoDB and AWS Apigateway.'
+            'Aseguramiento de Calidad (QA): Ejecución de pruebas integrales en módulos operativos, validando la correcta persistencia de datos y el cumplimiento de la lógica de negocio.',
+            'Gestión de Base de Datos: Desarrollo de funciones y procedimientos para la gestión de catálogos, optimizando la lógica de almacenamiento y la integridad de los datos en el sistema financiero.'
         ]
     }
 ];
@@ -108,7 +100,7 @@ const toggleExperience = (index) => {
                 </div>
             </section>
             <section class="title">
-                <h2>Education & Learning</h2>
+                <h2>Educación y Aprendizaje</h2>
             </section>
             <section class="education-box">
                 <div 

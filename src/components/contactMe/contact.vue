@@ -21,8 +21,8 @@ const {
 <template>
   <section id="contact-section" class="contact-root">
     <div class="banner-contact">
-      <h1 id="contact-title">Are you interested in my profile?</h1>
-      <h2>Contact Me and together we can build many things.</h2>
+      <h1 id="contact-title">¿Te interesa mi perfil?</h1>
+      <h2>Contáctame y platiquemos sobre cómo puedo integrarme a tu equipo.</h2>
     </div>
 
     <div class="contact-container">
@@ -31,7 +31,7 @@ const {
           <div class="info-box">
             <div class="info-icon">📧</div>
             <div>
-              <h4>Email</h4>
+              <h4>Correo electrónico</h4>
               <p class="muted">{{ contactInfo.email }}</p>
             </div>
           </div>
@@ -39,7 +39,7 @@ const {
           <div class="info-box">
             <div class="info-icon">📞</div>
             <div>
-              <h4>Phone</h4>
+              <h4>Número de teléfono</h4>
               <p class="muted phone-number">{{ contactInfo.phone }}</p>
             </div>
           </div>
@@ -47,14 +47,14 @@ const {
           <div class="info-box">
             <div class="info-icon">📍</div>
             <div>
-              <h4>Location</h4>
+              <h4>Ubicación</h4>
               <p class="muted">{{ contactInfo.location }}</p>
             </div>
           </div>
         </aside>
 
         <form ref="form" class="contact-form" @submit.prevent="handleSubmit">
-          <h3>Tell Me About Your Idea</h3>
+          <h3>Enviame un mensaje</h3>
 
           <div class="form-grid">
             <div>
@@ -63,7 +63,7 @@ const {
                 type="text"
                 name="name"
                 required
-                placeholder="Name *"
+                placeholder="Nombre *"
                 maxlength="40"
                 autocomplete="name"
                 :class="{ 'input-error': errors.name }"
@@ -78,7 +78,7 @@ const {
                 type="email"
                 name="email"
                 required
-                placeholder="Email *"
+                placeholder="Correo electrónico *"
                 maxlength="50"
                 autocomplete="email"
                 :class="{ 'input-error': errors.email }"
@@ -92,7 +92,7 @@ const {
                 v-model="formData.phone"
                 type="tel"
                 name="phone"
-                placeholder="Phone"
+                placeholder="Número de teléfono"
                 maxlength="15"
                 autocomplete="tel"
                 :class="{ 'input-error': errors.phone }"
@@ -106,7 +106,7 @@ const {
                 v-model="formData.company"
                 type="text"
                 name="company"
-                placeholder="Company"
+                placeholder="Empresa"
                 maxlength="60"
                 autocomplete="organization"
               />
@@ -118,7 +118,7 @@ const {
             name="message"
             rows="6"
             required
-            placeholder="Describe your idea or project. What problem do you want to solve? What are your goals?"
+            placeholder="¿Tienes alguna duda o propuesta? Déjala aquí y me pondré en contacto contigo."
             :class="{ 'input-error': errors.message }"
             @input="handleMessageInput"
           ></textarea>
@@ -132,7 +132,7 @@ const {
               :disabled="isLoading"
               :class="{ 'sending': isLoading }"
             >
-              {{ isLoading ? 'Sending...' : 'Send Message' }}
+              {{ isLoading ? 'Enviando...' : 'Enviar mensaje' }}
             </button>
           </div>
         </form>

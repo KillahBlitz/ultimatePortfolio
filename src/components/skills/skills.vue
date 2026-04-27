@@ -44,7 +44,11 @@ const techs = {
     "vscode": "https://img.icons8.com/color/96/visual-studio-code-2019.png",
     "vs": "https://img.icons8.com/color/96/visual-studio--v1.png",
     "postman": "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/96/external-postman-is-the-only-complete-api-development-environment-logo-shadow-tal-revivo.png",
-    "bash": "https://img.icons8.com/color/96/bash.png"
+    "bash": "https://img.icons8.com/color/96/bash.png",
+    "oracle": "https://img.icons8.com/color/96/oracle-logo.png",
+    "powerbi": "https://img.icons8.com/color/96/power-bi-2021.png",
+    "excel": "https://img.icons8.com/color/96/microsoft-excel-2025.png",
+    "pandas": "https://img.icons8.com/color/96/pandas.png"
 }
 
 </script>
@@ -52,16 +56,13 @@ const techs = {
 <template>
     <section class="tecnologies-container">
         <div class="head-continer">
-            <h1 class="title-text">Skills and Lenguages.</h1>
+            <h1 class="title-text">Skills y Lenguajes</h1>
         </div>
         <div class="tecnologies-card">
             <div class="techs-container">
                 <div class="techs-card">
                     <h2 class="tittle-tech">Frontend</h2>
                     <div class="techs-grid">
-                        <img :src="techs['react']" alt="React" class="tech-icon" />
-                        <img :src="techs['vue']" alt="Vue.js" class="tech-icon" />
-                        <img :src="techs['astro']" alt="Astro" class="tech-icon" />
                         <img :src="techs['html']" alt="hTML" class="tech-icon" />
                         <img :src="techs['css']" alt="CSS" class="tech-icon" />
                         <img :src="techs['javascript']" alt="JavaScript" class="tech-icon" />
@@ -71,39 +72,39 @@ const techs = {
                     <h2 class="tittle-tech">Backend</h2>
                     <div class="techs-grid">
                         <img :src="techs['python']" alt="Python" class="tech-icon" />
-                        <img :src="techs['node']" alt="NodeJS" class="tech-icon" />
                         <img :src="techs['csharp']" alt="C#" class="tech-icon" />
                         <!--<img :src="techs['java']" alt="Java" class="tech-icon" />-->
-                        <!--<img :src="techs['php']" alt="PHP" class="tech-icon" />-->
+                        <img :src="techs['php']" alt="PHP" class="tech-icon" />
                     </div>
                 </div>
                 <div class="techs-card">
-                    <h2 class="tittle-tech">DataBase</h2>
+                    <h2 class="tittle-tech">Bases de Datos</h2>
                     <div class="techs-grid">
                         <img :src="techs['mongo']" alt="MongoDB" class="tech-icon" />
                         <img :src="techs['mysql']" alt="MySQL" class="tech-icon" />
                         <img :src="techs['postgres']" alt="PostgreSQL" class="tech-icon" />
+                        <img :src="techs['oracle']" alt="Oracle" class="tech-icon" />
                         <img :src="techs['sqlserver']" alt="SQLserver" class="tech-icon" />
+                        
                     </div>
                 </div>
-                <div class="techs-card">
+                <!-- <div class="techs-card">
                     <h2 class="tittle-tech">Cloud</h2>
                     <div class="techs-grid">
                         <img :src="techs['aws']" alt="AWS" class="tech-icon" />
-                        <!--<img :src="techs['azure']" alt="Azure" class="tech-icon" />-->
-                        <img :src="techs['gcp']" alt="Google Cloud Platform" class="tech-icon" />
-                    </div>
-                </div>
+                        <img :src="techs['azure']" alt="Azure" class="tech-icon" />
+                    </div> 
+                </div>--> 
                 <div class="techs-card">
-                    <h2 class="tittle-tech">Infraestructure</h2>
+                    <h2 class="tittle-tech">Análisis y ETL</h2>
                     <div class="techs-grid">
-                        <img :src="techs['docker']" alt="Docker" class="tech-icon" />
-                        <img :src="techs['kubernetes']" alt="Kubernetes" class="tech-icon" />
-                        <img :src="techs['bash']" alt="bash" class="tech-icon" />
+                        <img :src="techs['powerbi']" alt="Power BI" class="tech-icon" />
+                        <img :src="techs['excel']" alt="Excel" class="tech-icon" />
+                        <img :src="techs['pandas']" alt="Pandas" class="tech-icon" />
                     </div>
                 </div>
                 <div class="techs-card">
-                    <h2 class="tittle-tech">DevTools</h2>
+                    <h2 class="tittle-tech">Herramientas de Desarrollo</h2>
                     <div class="techs-grid">
                         <img :src="techs['github']" alt="GitHub Actions" class="tech-icon" />
                         <img :src="techs['atlassian']" alt="Confluence" class="tech-icon" />
@@ -117,19 +118,17 @@ const techs = {
         </div>
     </section>
     <section class="goals-container">
-        <h2 class="goals-title">In Progress.</h2>
+        <h2 class="goals-title">Roadmap de especialización</h2>
         <p class="goals-description">
-            I am continuously strengthening my skills in various programming languages, 
-            with a particular focus on mobile development and building artificial intelligence solutions.
+          Me encuentro en constante especialización técnica, evolucionando mi perfil hacia la ingeniería de datos y el diseño de arquitecturas en la nube. 
+          Mi enfoque actual es el desarrollo de procesos ETL, la creación de pipelines eficientes y la implementación de soluciones de IA que optimicen el 
+          procesamiento de información a gran escala.
         </p>
         <div class="techs-container">
             <div class="techs-card-future">
-                <h2 class="tittle-tech">I keep preparing myself.</h2>
+                <h2 class="tittle-tech">Sigo preparándome para dominar las tecnologías líderes en el ecosistema de datos.</h2>
                 <div class="techs-grid">
-                    <img :src="techs['flutter']" alt="Flutter" class="tech-icon" />
-                    <img :src="techs['kotlin']" alt="Kotlin" class="tech-icon" />
-                    <img :src="techs['go']" alt="GO" class="tech-icon" />
-                    <img :src="techs['rust']" alt="Rust" class="tech-icon" />
+                    <img src="/aboutMe/roadmap.png" alt="Roadmap" class="roadmap" />
                 </div>
             </div>
         </div>

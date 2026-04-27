@@ -6,8 +6,8 @@ const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
 const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 const contactInfo = {
-  email: "jmonroyc2100@gmail.com",
-  phone: "+52 55 8795 7504",
+  email: "kapaucastillo@gmail.com",
+  phone: "+52 81 3505 4938",
   location: "Mexico City, Mexico"
 };
 
@@ -45,19 +45,19 @@ function sanitizePhone(phone) {
 
 function validateName(name) {
   const v = name.trim();
-  if (!v) return 'Please enter your name.';
-  if (v.length < 2) return 'Name is too short.';
-  if (v.length > 40) return 'Name cannot exceed 40 characters.';
+  if (!v) return 'Por favor ingresa tu nombre.';
+  if (v.length < 2) return 'El nombre es demasiado corto.';
+  if (v.length > 40) return 'El nombre no puede exceder los 40 caracteres.';
   const nameRegex = /^[A-Za-zÀ-ÖØ-öø-ÿ ]+$/;
-  if (!nameRegex.test(v)) return 'Name contains invalid characters.';
+  if (!nameRegex.test(v)) return 'El nombre contiene caracteres inválidos.';
   return '';
 }
 
 function validateEmail(email) {
   const v = email.trim();
-  if (!v) return 'Please enter your email.';
+  if (!v) return 'Por favor ingresa tu correo electrónico.';
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailRegex.test(v)) return 'Please enter a valid email.';
+  if (!emailRegex.test(v)) return 'Por favor ingresa un correo electrónico válido.';
   return '';
 }
 
@@ -65,14 +65,14 @@ function validatePhone(phone) {
   const digits = phone.replace(/\D/g, '');
   if (!digits) return '';
   if (digits.length < 7 || digits.length > 15) {
-    return 'Phone must contain 7-15 digits.';
+    return 'El número de teléfono debe contener entre 7 y 15 dígitos.';
   }
   return '';
 }
 
 function validateMessage(message) {
   const v = message.trim();
-  if (!v) return 'Please write a message.';
+  if (!v) return 'Por favor escribe un mensaje.';
   return '';
 }
 
@@ -168,7 +168,7 @@ async function handleSubmit() {
   const result = await sendEmail(payload);
 
   if (result.ok) {
-    showModal('success', 'Success!', 'Your message has been sent successfully. We\'ll respond soon 👍');
+    showModal('success', '¡Éxito!', 'Tu mensaje ha sido enviado exitosamente. Me pondré en contacto contigo pronto.');
     formData.value = { name: '', email: '', phone: '', company: '', message: '' };
   } else {
     showModal('error', 'Error', result.message || 'Error sending message');
