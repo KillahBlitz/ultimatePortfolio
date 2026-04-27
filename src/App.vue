@@ -1,5 +1,7 @@
 <script setup>
 import AboutMe from './components/aboutMe/aboutMe.vue';
+import Certificates from './components/certificates/certificates.vue';
+import Contact from './components/contactMe/contact.vue';
 import Experience from './components/experience/experience.vue';
 import Skills from './components/skills/skills.vue';
 import background from './components/utils/background.vue';
@@ -19,6 +21,12 @@ import Header from './components/utils/header.vue';
     </div>
     <div id="skills">
         <Skills />
+    </div>
+    <div id="certificates">
+        <Certificates />
+    </div>
+    <div id="contact">
+        <Contact />
     </div>
 </template>
 
