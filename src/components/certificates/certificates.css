@@ -13,6 +13,7 @@
     flex-direction: column;
     background-color: transparent;
     backdrop-filter: blur(2px);
+    border-radius: 20px;
     box-shadow: 0 4px 8px var(--shadow-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 

@@ -13,7 +13,7 @@ const techs = {
     "csharp": "https://img.icons8.com/color/96/c-sharp-logo-2.png",
     "cpp": "https://img.icons8.com/color/96/c-plus-plus-logo.png",
     "python": "https://img.icons8.com/color/96/python--v1.png",
-    "nginx": "https://img.icons8.com/external-tal-revivo-green-tal-revivo/96/external-mongodb-a-cross-platform-document-oriented-database-program-logo-green-tal-revivo.png",
+    "nginx": "https://img.icons8.com/color/96/nginx.png",
     "mongo": "https://img.icons8.com/color/96/mongodb.png",
     "php": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-hypertext-preprocessor-a-widely-used-open-source-general-purpose-scripting-language-logo-color-tal-revivo.png",
     "java": "https://img.icons8.com/color/96/java-coffee-cup-logo--v1.png",
