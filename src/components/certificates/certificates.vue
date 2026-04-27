@@ -70,7 +70,6 @@ const closeCertificate = () => {
                 </div>
             </section>
             
-            <!-- Modal para ver certificado en grande -->
             <div v-if="selectedCertificate" class="certificate-modal" @click="closeCertificate">
                 <div class="certificate-modal-content" @click.stop>
                     <button class="certificate-modal-close" @click="closeCertificate">×</button>
@@ -83,7 +82,7 @@ const closeCertificate = () => {
             <section class="viewer">
                   <div class="cta-section">
                         <p class="cta-text">
-                        If you want to see all my certifications and download my CV, you can click the buttons below.
+                            If you want to see all my certifications and download my CV, you can click the buttons below.
                         </p>
                         <div class="cta-buttons">
                             <a href="https://drive.google.com/drive/folders/17wNozNMjEvSuC0H97HyaA2DuIXbwQHLE?usp=sharing" 
