@@ -24,8 +24,8 @@ const closeCertificate = () => {
                     <h3>Licenses</h3>
                     <ul>
                         <li>
-                            <a href="https://freecodecamp.org/certification/JacoboEmilianoMonroyCortines-0641/foundational-c-sharp-with-microsoft" target="_blank">
-                                <img src="https://media.licdn.com/dms/image/v2/C4E0BAQGLKj3JHcof0w/company-logo_100_100/company-logo_100_100/0/1630639684997/free_code_camp_logo?e=1778716800&v=beta&t=PLSfV5h3VinjhL8THH2y3Lg7uSni0caOTlrn2H7U_ps" alt="FreeCodeCamp" />
+                            <a href="https://www.freecodecamp.org/certification/jacoboemilianomonroycortines-0641/foundational-c-sharp-with-microsoft" target="_blank">
+                                <img src="https://play-lh.googleusercontent.com/7cis8M9xeE5wYpR9QvJOC1dnvG5mlI6sy3LpP6kS3FYV29SU5dtBBO2ApKXVf2qWYg=s256-rw" alt="FreeCodeCamp" />
                                 <div class="text">
                                     <h5>FreeCodeCamp</h5>
                                     <h6>Foundational C sharp with Microsoft</h6> 
@@ -34,7 +34,7 @@ const closeCertificate = () => {
                         </li>
                         <li>
                             <a href="https://www.skills.google/public_profiles/21956ab4-f459-412c-8881-552a270ba8fd/badges/23671191" target="_blank">
-                                <img src="https://media.licdn.com/dms/image/v2/D4E0BAQGv3cqOuUMY7g/company-logo_100_100/B4EZmhegXHGcAU-/0/1759350753990/google_logo?e=1778716800&v=beta&t=oyauLAhMKDwroENjxT3iSuFHhYNWyLar32I5PYYRS2g" alt="Google Skills" />
+                                <img src="https://media.licdn.com/dms/image/v2/D560BAQFV-ds_iFfVSQ/company-logo_200_200/company-logo_200_200/0/1698660876286?e=2147483647&v=beta&t=GTNf3kD3LVtMJOG8AdTtdqv1aGmSDNC6zHOYBnEWyww" alt="Google Skills" />
                                 <div class="text">
                                     <h5>Google Skills</h5>
                                     <h6>Basic Fundamentals of DevOps in GCP</h6> 
@@ -43,10 +43,19 @@ const closeCertificate = () => {
                         </li>
                         <li>
                             <a href="https://www.linkedin.com/learning/certificates/384a2f3391bbb1c3d13c810ded4e1b8f5185d41bd0dafd8dd966f08a63c97557" target="_blank">
-                                <img src="https://media.licdn.com/dms/image/v2/D560BAQH32RJQCl3dDQ/company-logo_100_100/B56ZYQ0mrGGoAU-/0/1744038948046/microsoft_logo?e=1778716800&v=beta&t=yhCG_9tIy97plyj-EzhkTzFKeoOdfmz5Uc05X4kLbCs" alt="LinkedIn Learning" />
+                                <img src="https://eastcascadesworks.org/wp-content/uploads/2024/08/Linkedin-Learning-Web.png" alt="LinkedIn Learning" />
                                 <div class="text">
                                     <h5>LinkedIn Learning</h5>
                                     <h6>Professional Foundations of Software Development</h6> 
+                                </div>                                
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.credly.com/badges/1b2c8134-2fa2-4296-9da9-2bb29c9876fd/public_url" target="_blank">
+                                <img src="https://images.credly.com/size/220x220/images/082c8d0c-5232-4597-b6c4-6bebcc4f3046/blob" alt="AI Skills Fest" />
+                                <div class="text">
+                                    <h5>AI skill Fest</h5>
+                                    <h6>AI Skills Fest 2026</h6> 
                                 </div>                                
                             </a>
                         </li>
