@@ -22,6 +22,19 @@ onMounted(() => {
       script.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'
       document.head.appendChild(script)
     }
+
+    $fetch('/api/visit', {
+      method: 'POST',
+      body: {
+        referrer: document.referrer || 'direct',
+        language: navigator.language || 'unknown',
+        screen: {
+          width: window.innerWidth,
+          height: window.innerHeight
+        },
+        path: window.location.pathname
+      }
+    }).catch(() => {})
   }
 })
 </script>

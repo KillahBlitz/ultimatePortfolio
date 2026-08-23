@@ -6,6 +6,18 @@ export default defineNuxtConfig({
       publicDir: '.output/public'
     }
   },
+  hooks: {
+    'close': async () => {
+      const { closeDatabase } = await import('./server/utils/db')
+      await closeDatabase()
+    },
+    'nitro:init'(nitro) {
+      nitro.hooks.hook('close', async () => {
+        const { closeDatabase } = await import('./server/utils/db')
+        await closeDatabase()
+      })
+    }
+  },
   components: [
     {
       path: '~/components',

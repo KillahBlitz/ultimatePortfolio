@@ -23,3 +23,11 @@ export async function connectToDatabase(): Promise<Db> {
   cachedDb = cachedClient.db('portfolio_db')
   return cachedDb
 }
+
+export async function closeDatabase(): Promise<void> {
+  if (cachedClient) {
+    await cachedClient.close(true)
+    cachedClient = null
+    cachedDb = null
+  }
+}
