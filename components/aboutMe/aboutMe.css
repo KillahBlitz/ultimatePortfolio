@@ -1,0 +1,191 @@
+.about-me-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 20px 0;
+    width: 100%;
+}
+
+.about-me-container {
+    width: 90%;
+    max-width: 1140px;
+    padding: 45px 40px;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.image-space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.avatar-wrapper {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar-glow-ring {
+    position: absolute;
+    inset: -6px;
+    border-radius: 50%;
+    background: conic-gradient(from 0deg, var(--primary-color), var(--gradient-color), transparent 60%, var(--primary-color));
+    animation: neonOrbit 8s linear infinite;
+    filter: blur(4px);
+    opacity: 0.85;
+}
+
+.image-container {
+    position: relative;
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: var(--background-color);
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    box-shadow: var(--liquid-shadow-card);
+    z-index: 1;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.avatar-wrapper:hover .profile-image {
+    transform: scale(1.06);
+}
+
+.info-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.status-badge-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.pulse-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color);
+    animation: pulseGlow 2s infinite;
+}
+
+.presentation-content h2.greeting-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin: 0;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.presentation-content h1.author-name {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--font-color);
+    margin: 4px 0;
+    line-height: 1.15;
+}
+
+.presentation-content h3.role-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--font-color);
+    opacity: 0.85;
+    margin: 0;
+}
+
+.description-container p {
+    font-size: 1rem;
+    line-height: 1.65;
+    color: var(--font-color);
+    opacity: 0.9;
+    margin-bottom: 12px;
+}
+
+.actions-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 8px;
+}
+
+.social-pill {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--liquid-surface-base);
+    border: 1px solid var(--liquid-border);
+    backdrop-filter: var(--liquid-blur-subtle);
+    -webkit-backdrop-filter: var(--liquid-blur-subtle);
+    box-shadow: var(--liquid-shadow-card);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.social-pill img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+.dark-mode .social-pill img {
+    filter: invert(1);
+}
+
+.social-pill:hover {
+    background: var(--liquid-surface-hover);
+    border-color: var(--primary-color);
+    transform: translateY(-3px) scale(1.08);
+    box-shadow: var(--liquid-shadow-hover);
+}
+
+@media (max-width: 860px) {
+    .about-me-container {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .status-badge-container {
+        justify-content: center;
+    }
+
+    .info-content {
+        align-items: center;
+    }
+
+    .actions-container {
+        justify-content: center;
+    }
+
+    .presentation-content h1.author-name {
+        font-size: 2rem;
+    }
+
+    .description-container p {
+        text-align: center;
+        font-size: 0.95rem;
+    }
+}

@@ -1,0 +1,130 @@
+:root {
+    --primary-color: #cc000e;
+    --background-color: #e2e2e2;
+    --shadow-color: #b3020e;
+    --font-color: #111827;
+    --gradient-color: #ff0099;
+
+    --text-color: #111827;
+    --primary-rgb: 204, 0, 14;
+    --secondary-rgb: 255, 0, 153;
+    --shadow-rgb: 179, 2, 14;
+    --background-rgb: 226, 226, 226;
+
+    --liquid-surface-base: rgba(255, 255, 255, 0.45);
+    --liquid-surface-hover: rgba(255, 255, 255, 0.70);
+    --liquid-surface-elevated: rgba(255, 255, 255, 0.85);
+    --liquid-surface-subtle: rgba(255, 255, 255, 0.25);
+
+    --liquid-specular-top: rgba(255, 255, 255, 0.90);
+    --liquid-specular-mid: rgba(255, 255, 255, 0.40);
+    --liquid-specular-bottom: rgba(0, 0, 0, 0.08);
+
+    --liquid-border: rgba(255, 255, 255, 0.65);
+    --liquid-border-highlight: rgba(204, 0, 14, 0.40);
+    --liquid-border-gradient: linear-gradient(135deg, rgba(204, 0, 14, 0.55) 0%, rgba(255, 0, 153, 0.25) 50%, rgba(255, 255, 255, 0.8) 100%);
+
+    --liquid-glow-primary: 0 0 20px rgba(204, 0, 14, 0.28), 0 0 45px rgba(204, 0, 14, 0.10);
+    --liquid-glow-secondary: 0 0 25px rgba(255, 0, 153, 0.25), 0 0 50px rgba(255, 0, 153, 0.10);
+    --liquid-shadow-card: 0 12px 36px 0 rgba(0, 0, 0, 0.08), -4px -4px 14px rgba(255, 255, 255, 0.8), inset 0 1px 1px 0 rgba(255, 255, 255, 0.95);
+    --liquid-shadow-hover: 0 20px 45px 0 rgba(0, 0, 0, 0.14), 0 0 25px rgba(204, 0, 14, 0.35), inset 0 1px 2px 0 rgba(255, 255, 255, 1);
+
+    --liquid-blur-subtle: blur(8px) saturate(140%);
+    --liquid-blur-standard: blur(14px) saturate(170%);
+    --liquid-blur-heavy: blur(24px) saturate(200%);
+
+    --glass-bg: rgba(255, 255, 255, 0.35);
+    --glass-bg-hover: rgba(255, 255, 255, 0.55);
+    --glass-bg-strong: rgba(255, 255, 255, 0.75);
+    --glass-border: rgba(255, 255, 255, 0.65);
+    --glass-border-primary: color-mix(in srgb, var(--primary-color) 35%, transparent);
+    --radius-card: 20px;
+    --radius-pill: 999px;
+    --radius-sm: 12px;
+}
+
+:root.dark-mode,
+.dark-mode {
+    --primary-color: #09ff00;
+    --background-color: #0d0d0e;
+    --shadow-color: #17b612;
+    --font-color: #e2e2e2;
+    --gradient-color: #00d4ff;
+
+    --text-color: #e2e2e2;
+    --primary-rgb: 9, 255, 0;
+    --secondary-rgb: 0, 212, 255;
+    --shadow-rgb: 23, 182, 18;
+    --background-rgb: 13, 13, 14;
+
+    --liquid-surface-base: rgba(18, 20, 24, 0.55);
+    --liquid-surface-hover: rgba(26, 32, 39, 0.75);
+    --liquid-surface-elevated: rgba(22, 27, 34, 0.85);
+    --liquid-surface-subtle: rgba(255, 255, 255, 0.04);
+
+    --liquid-specular-top: rgba(255, 255, 255, 0.22);
+    --liquid-specular-mid: rgba(255, 255, 255, 0.04);
+    --liquid-specular-bottom: rgba(0, 0, 0, 0.35);
+
+    --liquid-border: rgba(255, 255, 255, 0.12);
+    --liquid-border-highlight: rgba(9, 255, 0, 0.45);
+    --liquid-border-gradient: linear-gradient(135deg, rgba(9, 255, 0, 0.6) 0%, rgba(0, 212, 255, 0.25) 50%, rgba(255, 255, 255, 0.05) 100%);
+
+    --liquid-glow-primary: 0 0 20px rgba(9, 255, 0, 0.35), 0 0 45px rgba(9, 255, 0, 0.15);
+    --liquid-glow-secondary: 0 0 25px rgba(0, 212, 255, 0.35), 0 0 50px rgba(0, 212, 255, 0.15);
+    --liquid-shadow-card: 0 12px 40px 0 rgba(0, 0, 0, 0.65), inset 0 1px 1px 0 rgba(255, 255, 255, 0.18);
+    --liquid-shadow-hover: 0 20px 50px 0 rgba(0, 0, 0, 0.8), 0 0 25px rgba(9, 255, 0, 0.4), inset 0 1px 2px 0 rgba(255, 255, 255, 0.35);
+
+    --liquid-blur-subtle: blur(8px) saturate(140%);
+    --liquid-blur-standard: blur(14px) saturate(170%);
+    --liquid-blur-heavy: blur(24px) saturate(200%);
+
+    --glass-bg: rgba(18, 20, 24, 0.55);
+    --glass-bg-hover: rgba(26, 32, 39, 0.75);
+    --glass-bg-strong: rgba(22, 27, 34, 0.85);
+    --glass-border: rgba(255, 255, 255, 0.12);
+    --glass-border-primary: color-mix(in srgb, var(--primary-color) 35%, transparent);
+    --radius-card: 20px;
+    --radius-pill: 999px;
+    --radius-sm: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Jura', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: var(--font-color);
+    scroll-behavior: smooth;
+}
+
+#__nuxt,
+#app {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.goog-te-banner-frame,
+.goog-te-ftab-float,
+body > .skiptranslate {
+    display: none !important;
+}
+
+body {
+    top: 0 !important;
+}
+
+.goog-te-gadget {
+    display: none !important;
+}
