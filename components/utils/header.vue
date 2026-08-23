@@ -1,6 +1,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 import SwitchToggle from './switch.vue'
+import LangToggle from './LangToggle.vue'
 
 const { data: profileData } = await useFetch('/api/profile')
 const socialLinks = computed(() => profileData.value?.social || [
@@ -82,6 +83,7 @@ const scrollTo = (id, event) => {
                 <span>Contact</span>
             </a>
             <div class="nav-divider"></div>
+            <LangToggle />
             <SwitchToggle />
             <button class="hamburger-menu" @click="toggleMenu" aria-label="Toggle Navigation Menu">
                 <span></span>
@@ -112,6 +114,9 @@ const scrollTo = (id, event) => {
             <a href="#contact" class="mobile-item mobile-contact-item" @click="scrollTo('#contact', $event)">
                 <span>Contact Me</span>
             </a>
+            <div class="mobile-tools-row">
+                <LangToggle />
+            </div>
         </div>
     </div>
 </template>
@@ -295,6 +300,13 @@ a {
     padding-top: 14px;
     color: var(--primary-color);
     font-weight: 700;
+}
+
+.mobile-tools-row {
+    display: flex;
+    justify-content: center;
+    padding: 12px 20px;
+    border-top: 1px solid var(--liquid-border);
 }
 
 @media (min-width: 901px) and (max-width: 1140px) {
