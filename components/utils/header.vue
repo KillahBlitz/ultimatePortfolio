@@ -114,6 +114,19 @@ const scrollTo = (id, event) => {
             <a href="#contact" class="mobile-item mobile-contact-item" @click="scrollTo('#contact', $event)">
                 <span>Contact Me</span>
             </a>
+            <div class="mobile-social-row">
+                <a
+                    v-for="item in socialLinks"
+                    :key="item.name + '-mobile'"
+                    :href="item.url"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-icon-btn"
+                    :aria-label="item.name"
+                >
+                    <img :src="item.icon" :alt="item.name" />
+                </a>
+            </div>
             <div class="mobile-tools-row">
                 <LangToggle />
             </div>
@@ -122,6 +135,10 @@ const scrollTo = (id, event) => {
 </template>
 
 <style scoped>
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -130,16 +147,22 @@ a {
 .header-capsule {
     width: min(1180px, 94%);
     position: fixed;
-    top: 16px;
+    top: max(16px, env(safe-area-inset-top, 16px));
     left: 50%;
     transform: translateX(-50%);
     z-index: 100;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 24px;
+    padding: 10px 14px;
     box-sizing: border-box;
     transition: all 0.3s ease;
+}
+
+@media (min-width: 480px) {
+    .header-capsule {
+        padding: 10px 24px;
+    }
 }
 
 .nav-left {
@@ -176,8 +199,8 @@ a {
 }
 
 .social-icon-btn {
-    width: 38px;
-    height: 38px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -239,11 +262,14 @@ a {
     display: none;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     background: transparent;
     border: none;
     cursor: pointer;
     gap: 6px;
-    padding: 6px;
+    padding: 0;
+    width: 44px;
+    height: 44px;
 }
 
 .hamburger-menu span {
@@ -280,11 +306,14 @@ a {
 
 .mobile-item {
     padding: 14px 28px;
+    min-height: 44px;
     font-size: 1rem;
     font-weight: 600;
     color: var(--font-color);
     border-left: 3px solid transparent;
     transition: all 0.25s ease;
+    display: flex;
+    align-items: center;
 }
 
 .mobile-item:hover {
@@ -333,8 +362,20 @@ a {
         display: none;
     }
 
+    .social-icons-group {
+        display: none;
+    }
+
     .hamburger-menu {
         display: flex;
     }
+}
+
+.mobile-social-row {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px 20px;
+    border-top: 1px solid var(--liquid-border);
 }
 </style>
