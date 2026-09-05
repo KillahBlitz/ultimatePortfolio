@@ -1,6 +1,5 @@
 <script setup>
 import Background from '~/components/utils/background.vue'
-import Header from '~/components/utils/header.vue'
 
 onMounted(() => {
   if (typeof window !== 'undefined') {
@@ -42,13 +41,12 @@ onMounted(() => {
 <template>
   <div>
     <div id="google_translate_element" style="display:none"></div>
-    <div class="head">
-      <Header />
-    </div>
     <ClientOnly>
       <Background />
     </ClientOnly>
-    <NuxtPage />
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>
 
@@ -64,13 +62,5 @@ body {
 }
 .skiptranslate > iframe {
   display: none !important;
-}
-</style>
-
-<style scoped>
-.head {
-  padding-top: 20px;
-  position: relative;
-  z-index: 1;
 }
 </style>
