@@ -1,7 +1,6 @@
 <script setup>
 import { onMounted } from 'vue'
 import AboutMe from '~/components/aboutMe/aboutMe.vue'
-import Services from '~/components/services/services.vue'
 import Projects from '~/components/projects/projects.vue'
 import Experience from '~/components/experience/experience.vue'
 import Skills from '~/components/skills/skills.vue'
@@ -22,9 +21,6 @@ onMounted(() => {
   <main class="main-content-flow">
     <div id="about">
       <AboutMe />
-    </div>
-    <div id="services">
-      <Services />
     </div>
     <div id="projects">
       <Projects />

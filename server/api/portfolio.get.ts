@@ -4,7 +4,6 @@ export default defineEventHandler(async () => {
 
     const [
       profile,
-      services,
       projects,
       experience,
       education,
@@ -13,7 +12,6 @@ export default defineEventHandler(async () => {
       techCatalogDoc
     ] = await Promise.all([
       db.collection('profile').findOne({}),
-      db.collection('services').find({ active: { $ne: false } }).sort({ order: 1 }).toArray(),
       db.collection('projects').find({}).sort({ order: 1 }).toArray(),
       db.collection('experience').find({}).sort({ order: 1 }).toArray(),
       db.collection('education').find({}).sort({ order: 1 }).toArray(),
@@ -24,7 +22,6 @@ export default defineEventHandler(async () => {
 
     return {
       profile: profile || null,
-      services: services || [],
       projects: (projects || []).map(p => ({
         ...p,
         agents: p.agents ?? false,

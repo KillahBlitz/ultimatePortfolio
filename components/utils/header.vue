@@ -47,9 +47,6 @@ const scrollTo = (id, event) => {
             <a href="#about" class="nav-link-btn" @click="scrollTo('#about', $event)">
                 <span>About</span>
             </a>
-            <a href="#services" class="nav-link-btn" @click="scrollTo('#services', $event)">
-                <span>Services</span>
-            </a>
             <a href="#projects" class="nav-link-btn" @click="scrollTo('#projects', $event)">
                 <span>Projects</span>
             </a>
@@ -79,6 +76,9 @@ const scrollTo = (id, event) => {
         </div>
 
         <div class="nav-right">
+            <NuxtLink to="/more" class="contact-cta-btn more-btn">
+                <span>+</span>
+            </NuxtLink>
             <a href="#contact" class="contact-cta-btn" @click="scrollTo('#contact', $event)">
                 <span>Contact</span>
             </a>
@@ -96,9 +96,6 @@ const scrollTo = (id, event) => {
             <a href="#about" class="mobile-item" @click="scrollTo('#about', $event)">
                 <span>About Me</span>
             </a>
-            <a href="#services" class="mobile-item" @click="scrollTo('#services', $event)">
-                <span>Services</span>
-            </a>
             <a href="#projects" class="mobile-item" @click="scrollTo('#projects', $event)">
                 <span>Projects</span>
             </a>
@@ -114,6 +111,9 @@ const scrollTo = (id, event) => {
             <a href="#contact" class="mobile-item mobile-contact-item" @click="scrollTo('#contact', $event)">
                 <span>Contact Me</span>
             </a>
+            <NuxtLink to="/more" class="mobile-item mobile-contact-item" @click="closeMenu">
+                <span>+ More</span>
+            </NuxtLink>
             <div class="mobile-social-row">
                 <a
                     v-for="item in socialLinks"
@@ -157,6 +157,7 @@ a {
     padding: 10px 14px;
     box-sizing: border-box;
     transition: all 0.3s ease;
+    overflow: visible;
 }
 
 @media (min-width: 480px) {
@@ -250,6 +251,10 @@ a {
 .contact-cta-btn:hover {
     transform: translateY(-2px) scale(1.03);
     box-shadow: 0 4px 16px rgba(var(--primary-rgb), 0.55);
+}
+
+.more-btn {
+    padding: 5px 12px;
 }
 
 .nav-divider {
@@ -354,7 +359,8 @@ a {
         display: none;
     }
 
-    .contact-cta-btn {
+    .contact-cta-btn,
+    .more-btn {
         display: none;
     }
 
