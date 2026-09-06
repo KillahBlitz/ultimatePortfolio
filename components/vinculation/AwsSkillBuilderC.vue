@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { ref, computed, watch, onMounted, onUnmounted } from 'vue'
 
 const props = defineProps({
   routeImageBase: { type: String, required: true },
@@ -75,6 +75,12 @@ function triggerAnimations() {
 const statsRef = ref(null)
 let observer = null
 let triggered = false
+
+watch([statBadges, statArticles, statWishlist], () => {
+  triggered = false
+  triggerAnimations()
+  triggered = true
+})
 
 onMounted(() => {
   const img = coverImgRef.value
