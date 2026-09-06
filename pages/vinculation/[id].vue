@@ -6,7 +6,7 @@ definePageMeta({
 const route = useRoute()
 const id = Number(route.params.id)
 
-const { data: vinculation } = await useFetch('/api/vinculation')
+const { data: vinculation } = await useFetch('/api/vinculation', { getCachedData: () => null })
 
 const item = ref(
   (vinculation.value || []).find(v => Number(v.id) === id) ?? null
